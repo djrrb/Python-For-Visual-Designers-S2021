@@ -63,10 +63,10 @@ This Type@Cooper course was originated by [Andy Clymer](http://www.andyclymer.co
 * Conditions
 
 #### Session links
-<!--
+
 * [**Session 1 scripts**](/session-1)
-* [**Recorded demo**](#)
--->
+* [**Recorded demo**](https://vimeo.com/518892332)
+
 
 #### Optional readings
 * [The Zen of Python](https://www.python.org/dev/peps/pep-0020/#easter-egg)
