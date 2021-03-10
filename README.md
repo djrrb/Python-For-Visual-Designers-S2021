@@ -95,10 +95,10 @@ This Type@Cooper course was originated by [Andy Clymer](http://www.andyclymer.co
 * colorsys ([docs](https://docs.python.org/3/library/colorsys.html))
 
 #### Session links
-<!--
-[//]* [**Scripts**](/session-2)
-[//]* [**Recorded demo**](#)
--->
+
+* [**Scripts**](/session-2)
+* [**Recorded demo**](https://vimeo.com/521931595/a57d352bfc)
+
 
 #### Optional readings
 * [Duck Typing](https://www.pythonmorsels.com/topics/duck-typing/)
