@@ -1,5 +1,5 @@
 # True, False, None
-# use our special none keyword to 
+# use our special none keyword to draw shapes as outlines only
 fill(None)
 # set the stroke to black
 # 0 is the same as 0,0,0
