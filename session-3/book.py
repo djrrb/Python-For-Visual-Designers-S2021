@@ -1,6 +1,8 @@
+# define a blank page
 docSize = 'Letter'
 newPage(docSize)
-stripeCount = 7
+
+
 
 # this is a triangle function
 # we are not using it but we could
@@ -57,9 +59,18 @@ myFontSize = 14
 # define line height relative to font size
 myLineHeight = myFontSize*1.5
 
+# the font to use
 myFont = 'MinionPro-Regular'
+
+# the title of the book, for running heads
 bookTitle = 'The Great Gatsby'
+
+# the number of stripes to draw in our background
+stripeCount = 7
+
+# starting page number
 pageNumber = 1
+
 
 # draw the background on our first empty page
 background()
