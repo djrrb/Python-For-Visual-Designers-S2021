@@ -130,5 +130,6 @@ with open('gatsby-short.txt', 'r', encoding="utf-8") as myFile:
     
         pageNumber += 1
         
+# draw an extra page at the end
 newPage(docSize)
 background()
