@@ -117,10 +117,10 @@ This Type@Cooper course was originated by [Andy Clymer](http://www.andyclymer.co
 * Image Object ([docs](https://www.drawbot.com/content/image/imageObject.html))
 
 #### Session links
-<!--
 * [**Scripts**](/session-3)
-* [**Session Recording**](#)
--->
+* [**Recorded demo** (part 1)](https://cooper.zoom.us/rec/share/up3ZTlS5fyjDTDULA4Bmfgx5qmW3WgR5mEo_QwoCAUi-Nn_vw8eMOFl5yj4tGDox.KG55QY1R72Svsd7I) (passcode: `%2L@RL0V`)
+* [**Recorded demo** (part 2)](https://vimeo.com/526664831/055fac235d)
+
 
 
 #### Optional readings
