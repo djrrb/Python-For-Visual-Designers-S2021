@@ -48,3 +48,5 @@ for yi in range(yiterations):
     # outdenting exits our saved state and x is returned to 0
     # now move our y up for the next row
     translate(0, baseGrid)
+
+saveImage('~/desktop/conditional-checkerboard.png')

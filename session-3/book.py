@@ -1,7 +1,7 @@
 # define a blank page
 docSize = 'Letter'
 newPage(docSize)
-
+frameDuration(.2)
 
 
 # this is a triangle function
@@ -38,6 +38,8 @@ def marble(x, y, w, h, wiggle=100):
     drawPath(b)
    
 def background(): 
+    fill(1)
+    rect(0, 0, width(), height())
     # This function draws our background
     # a series of marble stripes
     # we start drawing a shape that is the full height of the page
@@ -87,12 +89,14 @@ with open('gatsby-short.txt', 'r', encoding="utf-8") as myFile:
             lineHeight=myLineHeight, 
             #openTypeFeatures=dict(smcp=True), 
             align="justified", 
-            firstLineIndent=myLineHeight
+            firstLineIndent=myLineHeight,
+            #paragraphBottomSpacing=myFontSize/2
         )
     
     # make new pages until we run out of text in the formatted string
     while fs:
         newPage(docSize)
+        frameDuration(.2)
         # define some variables related to margins and margin size
         m = width()/10
         # define our top margin separately to make room for a header
@@ -143,4 +147,7 @@ with open('gatsby-short.txt', 'r', encoding="utf-8") as myFile:
         
 # draw an extra page at the end
 newPage(docSize)
+frameDuration(.2)
 background()
+
+saveImage('~/desktop/book.gif')
