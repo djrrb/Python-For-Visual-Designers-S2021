@@ -1,11 +1,17 @@
-bp = BezierPath()
+# this briefly demos that you can draw things other than images into a clipping path
 
+# make a bezier path and fill it with a formatted string
+bp = BezierPath()
 fs = FormattedString('A', font='Times', fontSize=1500)
 bp.text(fs)
 
-im = ImageObject()
+# save our state
+# this allows us to exit the clipping path
+with savedState():
+    # start clipping based on our bezier path
+    clipPath(bp)
 
-with im:
+    # do our stipple stuff
     translate(width()/2, height()/2)
     for i in range(10000):
         with savedState():
@@ -15,10 +21,8 @@ with im:
             d = randint(5, 30)
             translate(offsetX, offsetY)
             oval(-d/2, -d/2, d, d)
-
-clipPath(bp)
-im.vortexDistortion((width()/2, height()/2), 500)
-im.sepiaTone()
-image(im, (0, 0))
-#fill(1)
-#rect(-250, -150, 500, 300)
+            
+# now we have exited our saved state and clipping path
+# draw some text to prove it
+font('Verdana', 100)
+text('hello world', (200, 200))

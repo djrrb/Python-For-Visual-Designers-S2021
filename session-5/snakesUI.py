@@ -1,7 +1,8 @@
 # how many frames
 frames = 1
 
-
+# define some variables in a UI
+# https://www.drawbot.com/content/variables.html
 
 Variable([
     dict(name="snakeCount", ui="Slider",
@@ -11,42 +12,36 @@ Variable([
                 value=10,
                 minValue=1,
                 maxValue=20,
-            tickMarkCount=19, 
-            stopOnTickMarks=True
-                
+                tickMarkCount=19, 
+                stopOnTickMarks=True
                 )),
     dict(name="maxWiggle", ui="Slider",
             args=dict(
-                # some vanilla specific
-                # setting for a slider
                 value=100,
                 minValue=0,
                 maxValue=200)),
     dict(name="segmentLength", ui="Slider",
             args=dict(
-                # some vanilla specific
-                # setting for a slider
                 value=50,
                 minValue=10,
                 maxValue=200)),
     dict(name="thickness", ui="Slider",
             args=dict(
-                # some vanilla specific
-                # setting for a slider
                 value=20,
                 minValue=1,
                 maxValue=40)),
 
-    # create a variable called 'useColor'
-    # and the related ui is a CheckBox.
     dict(name="drawPoints", ui="CheckBox"),
     ], globals())
 
 
+# our UI will return some values as floats
+# we can convert them to integers before using them
 maxWiggle = int(maxWiggle)
 snakeCount = int(snakeCount)
 segmentLength = int(segmentLength)
 
+# define other variables not covered in our UI
 
 # set the length of our handles
 # we could use more advanced math for this
@@ -63,8 +58,6 @@ margin = 0
 
 
 # okay let’s draw
-
-
 
 for frame in range(frames):
     newPage()
@@ -137,4 +130,4 @@ for frame in range(frames):
         # move to the next column
         translate(columnWidth)
     
-saveImage('~/desktop/snakes.gif')
+#saveImage('snakes.gif')
