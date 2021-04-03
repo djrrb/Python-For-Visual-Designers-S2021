@@ -72,6 +72,8 @@ for frame in range(frames):
             # so in either direction it’s half the height
             y = yprogress * height()/2
             # draw our dot
+            stroke(0, 1, 0)
+            fill(None)
             oval(x-d/2, y-d/2, d, d)
             # advance to the next column to draw our next dot
             x += width()/frames
@@ -102,6 +104,9 @@ for frame in range(frames):
         }
     )
     
+    # draw the text box
+    # subtract from the full height so the text is vertically centered
+    # this is a bit hacky but it works
     textBox(fs, (0, 0, width(), height()-200))
         
-saveImage('dots.gif')
+saveImage('animated-text.gif')
